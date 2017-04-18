@@ -1,2 +1,10 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+
+
+<h1 class="h1_center"> Wiki Articles</h1>
+
+
+<% @articles.each do |article| %>
+     <h1 class="remove_underline"><%= article.language %> - <%= link_to article.title, article_path(article) %></h1> <span id="time_ago"> Created: <%= time_ago_in_words(article.created_at) %> ago </span>
+     <p class="remove_underline"><%= link_to truncate(article.body, omission: '...... (continue reading)', length: 400), article_path(article) %></p>
+<hr>
+<% end %>

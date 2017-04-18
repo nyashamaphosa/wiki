@@ -1,5 +1,12 @@
 <%= simple_form_for @article do |f| %>
-  <%= f.input :title %>
-  <%= f.input :body %>
+  <%= f.label :TITLE %>
+  <%= f.input :title, label: false %>
+  <br>
+  <%= f.label :LANGUAGE %>
+  <%= f.input :language, label: false%>
+  <br>
+  <%= f.label :BODY %>
+  <%= f.input :body, label: false %>
+  <br>
   <%= f.button :submit %>
 <% end %>

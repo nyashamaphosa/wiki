@@ -9,6 +9,18 @@
   </head>
 
   <body>
+  <div class="topnav" id="myTopnav">
+		<a href="<%= root_path %>">HOME</a>
+
+		<%if user_signed_in? %>
+		    <a href="<%= destroy_user_session_path %>" data-method="delete">SIGN-OUT</a>
+		<%else%>
+            <a href="<%= new_user_session_path%>">SIGN-IN/SIGN-UP</a>
+        <%end%>
+
+		<a href="<%= new_article_path %>">CREATE ARTICLE</a>
+		<a href="#about">About</a>
+  </div>
     <%= yield %>
   </body>
 </html>
