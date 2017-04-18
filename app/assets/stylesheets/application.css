@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+.h1_center {
+	text-align: center;
+}
+
+.remove_underline a:link, a:visited {
+	text-decoration: none;
+	color: inherit; 
+}
+
+
+body {
+	margin-left: 150px;
+	margin-right: 150px;
+}
