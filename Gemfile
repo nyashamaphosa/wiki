@@ -6,6 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 
+#syntax highlighting
+gem 'syntax-highlighter-rails'
 #ransack
 gem 'ransack'
 #simple form
