@@ -4,6 +4,7 @@ To Highlight code/syntax in this wiki just just encase the desired area with spa
 
 Example:
 
-<span id="code">
+#<span id="code">
+
     // Your Blog/Wiki code goes here //
-</span>
+#</span>
