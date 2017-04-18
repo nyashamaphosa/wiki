@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To Highlight code/syntax in this wiki just just encase the desired area with span tags and id="code"
 
-Things you may want to cover:
+Example:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<span id="code">
+    // Your Blog/Wiki code goes here //
+</span>
