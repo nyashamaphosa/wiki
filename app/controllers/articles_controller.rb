@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
 
   def index
     @q = Article.ransack(params[:q])
-    @articles = @q.result(distinct: true)
+    @articles = @q.result.includes(:category)
   end
 
   def new
@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @articles = current_user.articles.build(article_params)
+    @article = current_user.articles.build(article_params)
   	if @article.save
   		redirect_to @article
   	else
@@ -49,7 +49,7 @@ class ArticlesController < ApplicationController
   end 
 
   def article_params
-  	params.require(:article).permit(:title, :body, :language)
+  	params.require(:article).permit(:title, :body, :language, :category_id)
   end 
 
 end

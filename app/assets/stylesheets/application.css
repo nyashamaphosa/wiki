@@ -12,10 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require trix
  */
 
 .h1_center {
 	text-align: center;
+    font-size: 50px;
 }
 
 #time_ago {
@@ -27,9 +29,6 @@
 	color: inherit; 
 }
 
-#code {
-   background-color: grey;
-}
 
 body {
 	margin-left: 150px;

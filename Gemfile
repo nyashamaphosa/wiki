@@ -5,7 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+#trix
+gem 'trix'
 #syntax highlighting
 gem 'syntax-highlighter-rails'
 #ransack
